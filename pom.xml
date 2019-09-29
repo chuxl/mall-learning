@@ -6,10 +6,25 @@
 
     <groupId>com.macro.mall</groupId>
     <artifactId>mall-learning</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
         <module>mall-tiny</module>
+        <module>mall-tiny-01</module>
+        <module>mall-tiny-02</module>
+        <module>mall-tiny-03</module>
+        <module>mall-tiny-04</module>
+        <module>mall-tiny-05</module>
+        <module>mall-tiny-06</module>
+        <module>mall-tiny-07</module>
+        <module>mall-tiny-08</module>
+        <module>mall-tiny-09</module>
+        <module>mall-tiny-aop</module>
+        <module>mall-tiny-docker</module>
+        <module>mall-tiny-docker-compose</module>
+        <module>mall-tiny-docker-file</module>
+        <module>mall-tiny-elk</module>
     </modules>
 
 </project>
