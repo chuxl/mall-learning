@@ -1,10 +1,17 @@
 package com.macro.mall.tiny.mbg.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.io.Serializable;
 
+//字段值为null的转换为json字符串时会被省略
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class PmsBrand implements Serializable {
     private Long id;
 
+    //设置该字段转换为json后的字段名为“brand_name”
+    @JsonProperty("brand_name")
     private String name;
 
     /**

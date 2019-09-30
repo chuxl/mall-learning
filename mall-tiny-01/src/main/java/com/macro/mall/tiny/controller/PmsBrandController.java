@@ -19,14 +19,14 @@ import java.util.List;
  * Created by macro on 2019/4/19.
  */
 @Controller
-@RequestMapping("/brand")
+@RequestMapping("/brand/*")
 public class PmsBrandController {
     @Autowired
     private PmsBrandService demoService;
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PmsBrandController.class);
 
-    @RequestMapping(value = "listAll", method = RequestMethod.GET)
+    @RequestMapping(value = "/listAll", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<List<PmsBrand>> getBrandList() {
         return CommonResult.success(demoService.listAllBrand());
