@@ -4,9 +4,11 @@ import com.macro.mall.tiny.mbg.model.PmsBrand;
 import com.macro.mall.tiny.mbg.model.PmsBrandExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface PmsBrandMapper {
-    long countByExample(PmsBrandExample example);
+    int countByExample(PmsBrandExample example);
 
     int deleteByExample(PmsBrandExample example);
 
